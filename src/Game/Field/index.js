@@ -57,8 +57,9 @@ export default class Field extends PIXI.Container {
 		If fromCol and fromRow are passed then the tile will be going
 		from (fromCol, fromRow) to (col, row) by tweening */
 	createFrontTile(cid, col, row, fromCol, fromRow, onComplete, appearanceDelay) {
-		let tile = new Front(cid, col, row);
+		let tile = new Front(cid, col, row, this.levelObj);
 		this.frontTiles[col][row] = tile;
+
 		tile.propLarger(Config.field.frontTileWidth, Config.field.frontTileHeight);
 		this.layerFront.addChild(tile);
 
@@ -97,7 +98,7 @@ export default class Field extends PIXI.Container {
 		for (let i = 0; i < this.levelObj.cols; i++) {
 			this.backTiles[i] = [];
 			for (let j = 0; j < this.levelObj.rows; j++) {
-				tile = new Back(7, i, j);
+				tile = new Back(7, i, j, this.levelObj);
 				this.backTiles[i][j] = tile;
 				tile.propLarger(Config.field.backTileWidth, Config.field.backTileHeight);
 				tile.position.set.apply(tile.position, this.getCoordsByPos(i, j));

@@ -4,8 +4,8 @@ import { TweenLite } from "gsap";
 import Tile from "./Tile.js";
 
 export default class Front extends Tile {
-	constructor(cid, col, row) {
-		super(cid, col, row);
+	constructor(cid, col, row, levelObj) {
+		super(cid, col, row, levelObj);
 	}
 
 	/** Shows appearing animation */
@@ -31,7 +31,9 @@ export default class Front extends Tile {
 			this._bg.texture = PIXI.Texture.from(this.obj.icoSelected);
 		} else {
 			this._bg.blendMode = PIXI.BLEND_MODES.NORMAL;
-			this._bg.texture = PIXI.Texture.from(this.obj.ico);
+			if(this.obj.ico){
+				this._bg.texture = PIXI.Texture.from(this.obj.ico);
+			}
 		}
 	}
 

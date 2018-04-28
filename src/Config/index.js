@@ -113,8 +113,8 @@ export default {
 		"6": {
 			"cid": 6,
 			"name": "First level",
-			"cols": 6,
-			"rows": 6
+			"cols": 4,
+			"rows": 4
 		},
 		"7": {
 			"cid": 7,
@@ -153,7 +153,72 @@ export default {
 			"ico": "piece08.png",
 			"icoSelected": "piece08_02.png",
 			"color": "0xe3f8ec"
-		}
+		},
+		"13": {
+			"cid": 13,
+			"name": "Second level",
+			"cols": 8,
+			"rows": 3
+		},
+		"14": {
+			"cid": 14,
+			"name": "Third level",
+			"cols": 7,
+			"rows": 8,
+			"hiddenBlock": [
+				[1, 0], [2, 0], [3, 0], [4, 0], [5, 0],
+				[1, 7], [2, 7], [3, 7], [4, 7], [5, 7],
+				[0, 1], [0, 2], [0, 3], [0, 4], [0, 5], [0, 6],
+				[6, 1], [6, 2], [6, 3], [6, 4], [6, 5], [6, 6]
+			]
+		},
+		"15": {
+			"cid": 15,
+			"name": "Four level",
+			"cols": 8,
+			"rows": 3
+		},
+		"16": {
+			"cid": 16,
+			"name": "Five level",
+			"cols": 8,
+			"rows": 3
+		},
+		"17": {
+			"cid": 17,
+			"name": "Six level",
+			"cols": 8,
+			"rows": 3
+		},
+		"18": {
+			"cid": 18,
+			"name": "Seven level",
+			"cols": 8,
+			"rows": 3
+		},
+		"19": {
+			"cid": 19,
+			"name": "Eight level",
+			"cols": 8,
+			"rows": 3
+		},
+		"20": {
+			"cid": 20,
+			"name": "Nine level",
+			"cols": 8,
+			"rows": 3
+		},
+		"21": {
+			"cid": 21,
+			"name": "Ten level",
+			"cols": 8,
+			"rows": 3
+		},
+		"22": {
+			"cid": 22,
+			"name": "Blocked back tile",
+			"ico": "backTile10.png"
+		},
 	}
 }
 

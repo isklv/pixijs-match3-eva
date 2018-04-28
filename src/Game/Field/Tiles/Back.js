@@ -4,8 +4,8 @@ import { TweenLite } from "gsap";
 import Tile from "./Tile.js";
 
 export default class Back extends Tile {
-	constructor(cid, col, row) {
-		super(cid, col, row);
+	constructor(cid, col, row, levelObj) {
+		super(cid, col, row, levelObj);
 	}
 
 	/** Makes selected appearance */
