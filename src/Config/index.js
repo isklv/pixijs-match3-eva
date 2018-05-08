@@ -233,22 +233,12 @@ export default {
 			]
 		},
 		"22": {
-			"cid": 22,
-			"name": "Ten level",
-			"cols": 8,
-			"rows": 6,
-			"hiddenBlock": [
-				[2, 0], [3, 0], [4, 0], [5, 0],	[0, 3], [0, 4],
-				[0, 5], [1, 5],	[6, 5], [7, 3],	[7, 4], [7, 5]
-			]
-		},
-		"23": {
 			"cid": 23,
 			"name": "Eleventh level",
 			"cols": 7,
 			"rows": 7
 		},
-		"24": {
+		"23": {
 			"cid": 24,
 			"name": "Twelveth level",
 			"cols": 8,
@@ -260,17 +250,17 @@ export default {
 				[7, 3],	[7, 4], [7, 5],	[7, 6], [7, 7]
 			]
 		},
-		"25": {
+		"24": {
 			"cid": 25,
 			"name": "Thirdteenth level",
 			"cols": 8,
 			"rows": 7,
 			"hiddenBlock": [
 				[0, 0], [0, 1], [1, 0], [6, 0],	[7, 0],
-				[7, 1]
+				[7, 1], [7, 6], [0, 6]
 			]
 		},
-		"26": {
+		"25": {
 			"cid": 22,
 			"name": "Blocked back tile",
 			"ico": "backTile10.png"
