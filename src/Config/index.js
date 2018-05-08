@@ -204,8 +204,8 @@ export default {
 		"19": {
 			"cid": 19,
 			"name": "Eighth level",
-			"cols": 8,
-			"rows": 3,
+			"cols": 7,
+			"rows": 8,
 			"hiddenBlock": [
 				[0, 0], [0, 1],	[1, 0], [1, 1],[5, 0], [5, 1],
 				[6, 0], [6, 1]
