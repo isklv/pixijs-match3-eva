@@ -174,47 +174,103 @@ export default {
 		},
 		"15": {
 			"cid": 15,
-			"name": "Four level",
+			"name": "Fourth level",
 			"cols": 8,
-			"rows": 3
+			"rows": 8,
+			"hiddenBlock": [
+				[3, 0], [4, 0], [3, 1], [4, 1], [3, 2], [4, 2],
+				[3, 3], [4, 3],	[3, 4], [4, 4],	[3, 5], [4, 5],
+				[3, 6], [4, 6],	[3, 7], [4, 7]
+			]
 		},
 		"16": {
 			"cid": 16,
-			"name": "Five level",
-			"cols": 8,
-			"rows": 3
+			"name": "Fifth level",
+			"cols": 7,
+			"rows": 6
 		},
 		"17": {
 			"cid": 17,
-			"name": "Six level",
-			"cols": 8,
-			"rows": 3
+			"name": "Sixth level",
+			"cols": 7,
+			"rows": 7
 		},
 		"18": {
 			"cid": 18,
-			"name": "Seven level",
-			"cols": 8,
-			"rows": 3
+			"name": "Seventh level",
+			"cols": 7,
+			"rows": 8
 		},
 		"19": {
 			"cid": 19,
-			"name": "Eight level",
+			"name": "Eighth level",
 			"cols": 8,
-			"rows": 3
+			"rows": 3,
+			"hiddenBlock": [
+				[0, 0], [0, 1],	[1, 0], [1, 1],[5, 0], [5, 1],
+				[6, 0], [6, 1]
+			]
 		},
 		"20": {
 			"cid": 20,
-			"name": "Nine level",
-			"cols": 8,
-			"rows": 3
+			"name": "Ninth level",
+			"cols": 7,
+			"rows": 8,
+			"hiddenBlock": [
+				[0, 0], [0, 1], [0, 2], [0, 3],	[0, 4], [1, 2],
+				[1, 3], [6, 0],	[6, 1], [6, 2],	[6, 3], [6, 4],
+				[5, 2], [5, 3]
+			]
 		},
 		"21": {
 			"cid": 21,
-			"name": "Ten level",
+			"name": "Tenth level",
 			"cols": 8,
-			"rows": 3
+			"rows": 6,
+			"hiddenBlock": [
+				[2, 0], [3, 0], [4, 0], [5, 0],	[0, 3], [0, 4],
+				[0, 5], [1, 5],	[6, 5], [7, 3],	[7, 4], [7, 5]
+			]
 		},
 		"22": {
+			"cid": 22,
+			"name": "Ten level",
+			"cols": 8,
+			"rows": 6,
+			"hiddenBlock": [
+				[2, 0], [3, 0], [4, 0], [5, 0],	[0, 3], [0, 4],
+				[0, 5], [1, 5],	[6, 5], [7, 3],	[7, 4], [7, 5]
+			]
+		},
+		"23": {
+			"cid": 23,
+			"name": "Eleventh level",
+			"cols": 7,
+			"rows": 7
+		},
+		"24": {
+			"cid": 24,
+			"name": "Twelveth level",
+			"cols": 8,
+			"rows": 8,
+			"hiddenBlock": [
+				[0, 3], [0, 4], [0, 5], [0, 6],	[0, 7],
+				[1, 3], [1, 4], [1, 5],	[1, 6], [1, 7],
+				[6, 3], [6, 4],	[6, 5], [6, 6],	[6, 7],
+				[7, 3],	[7, 4], [7, 5],	[7, 6], [7, 7]
+			]
+		},
+		"25": {
+			"cid": 25,
+			"name": "Thirdteenth level",
+			"cols": 8,
+			"rows": 7,
+			"hiddenBlock": [
+				[0, 0], [0, 1], [1, 0], [6, 0],	[7, 0],
+				[7, 1]
+			]
+		},
+		"26": {
 			"cid": 22,
 			"name": "Blocked back tile",
 			"ico": "backTile10.png"
