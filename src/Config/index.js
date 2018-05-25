@@ -217,7 +217,7 @@ export default {
 		"22": {
 			"cid": 22,
 			"name": "Blocked back tile",
-			"ico": "backTile10.png"
+			"ico": ""
 		},
 	}
 }

@@ -12,11 +12,10 @@ export default class Tile extends PIXI.Container {
 
 		//check hidden block
 		if(this.levelObj.hiddenBlock && this.levelObj.hiddenBlock.filter(item => item[0] == col && item[1] == row).length){
-			this._bg = new PIXI.Sprite(PIXI.Texture.EMPTY);
-			this.obj = {};
+            this._bg = new PIXI.Sprite(PIXI.Texture.EMPTY);
 		}else{
 			this._bg = new PIXI.Sprite(PIXI.Texture.from(this.obj.ico));
-		}
+        }
 		
 		if (Array.isArray(this.obj.anchor)) this._bg.anchor.set(this.obj.anchor[0], this.obj.anchor[1]);
 		else this._bg.alignAnchor();
