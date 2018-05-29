@@ -174,48 +174,160 @@ export default {
 		},
 		"15": {
 			"cid": 15,
-			"name": "Four level",
+			"name": "Fourth level",
 			"cols": 8,
 			"rows": 3
 		},
 		"16": {
 			"cid": 16,
-			"name": "Five level",
+			"name": "Fifth level",
 			"cols": 8,
 			"rows": 3
 		},
 		"17": {
 			"cid": 17,
-			"name": "Six level",
+			"name": "Sixth level",
 			"cols": 8,
 			"rows": 3
 		},
 		"18": {
 			"cid": 18,
-			"name": "Seven level",
+			"name": "Seventh level",
 			"cols": 8,
 			"rows": 3
 		},
 		"19": {
 			"cid": 19,
-			"name": "Eight level",
+			"name": "Eighth level",
 			"cols": 8,
 			"rows": 3
 		},
 		"20": {
 			"cid": 20,
-			"name": "Nine level",
+			"name": "Ninth level",
 			"cols": 8,
 			"rows": 3
 		},
 		"21": {
 			"cid": 21,
-			"name": "Ten level",
+			"name": "Tenth level",
 			"cols": 8,
 			"rows": 3
 		},
 		"22": {
 			"cid": 22,
+			"name": "Eleventh level",
+			"cols": 8,
+			"rows": 3
+		},
+		"23": {
+			"cid": 23,
+			"name": "Twelveth level",
+			"cols": 8,
+			"rows": 3
+		},
+		"24": {
+			"cid": 24,
+			"name": "Thirdteenth level",
+			"cols": 8,
+			"rows": 3
+		},
+		"25": {
+			"cid": 25,
+			"name": "Fourteenth level",
+			"cols": 8,
+			"rows": 7,
+			"hiddenBlock": [
+				[0, 0], [1, 0], [6, 0], [7, 0], [0, 1],
+				[7, 1], [0, 3], [7, 3], [0, 6], [7, 6]
+			]
+		},
+		"26": {
+			"cid": 26,
+			"name": "Fifteenth level",
+			"cols": 8,
+			"rows": 7,
+			"hiddenBlock": [
+				[0, 0], [3, 0], [4, 0], [7, 0], [0, 4],
+				[7, 4], [0, 5], [1, 5], [6, 5], [7, 5],
+				[0, 6],	[1, 6], [2, 6], [5, 6], [6, 6], [7, 6]
+			]
+		},
+		"27": {
+			"cid": 27,
+			"name": "Sixteenth level",
+			"cols": 8,
+			"rows": 8
+		},
+		"28": {
+			"cid": 28,
+			"name": "Seventeenth level",
+			"cols": 8,
+			"rows": 8,
+			"hiddenBlock": [
+				[0, 0], [1, 0], [2, 0], [5, 0], [6, 0],
+				[7, 0], [0, 3], [7, 3], [0, 4], [7, 4],
+				[0, 7],	[1, 7], [6, 7], [7, 7]
+			]
+		},
+		"29": {
+			"cid": 29,
+			"name": "Eighteenth level",
+			"cols": 8,
+			"rows": 8,
+			"hiddenBlock": [
+				[0, 0], [7, 0], [0, 1], [7, 1], [0, 6],
+				[7, 6], [0, 7], [7, 7], [3, 7], [4, 7]
+			]
+		},
+		"30": {
+			"cid": 30,
+			"name": "Nineteenth level",
+			"cols": 8,
+			"rows": 8,
+			"hiddenBlock": [
+				[1, 0], [6, 0], [0, 1], [1, 1], [2, 1],[5, 1], [6, 1], [7, 1],
+				[1, 2], [6, 2], [1, 5], [6, 5], [0, 6], [1, 6], [2, 6],[5, 6], [6, 6], [7, 6],
+				[1, 7], [6, 7]
+			]
+		},
+		"31": {
+			"cid": 31,
+			"name": "Twentieth level",
+			"cols": 8,
+			"rows": 8,
+			"hiddenBlock": [
+				[1, 2], [2, 2], [5, 2], [6, 2], [1, 3],[2, 3], [5, 3], [6, 3],
+				[0, 6], [7, 6], [0, 7], [1, 7], [6, 7], [7, 7]
+			]
+		},
+		"32": {
+			"cid": 32,
+			"name": "Twenty first level",
+			"cols": 8,
+			"rows": 8
+		},
+		"33": {
+			"cid": 33,
+			"name": "Twenty second level",
+			"cols": 8,
+			"rows": 8,
+			"hiddenBlock": [
+				[0, 0], [1, 0], [6, 0], [7, 0], [0, 1],[7, 1], [0, 2], [7, 2],
+				[0, 6], [7, 6], [0, 7], [7, 7]
+			]
+		},
+		"34": {
+			"cid": 34,
+			"name": "Twenty third level",
+			"cols": 8,
+			"rows": 8,
+			"hiddenBlock": [
+				[0, 3], [1, 3], [2, 3], [5, 4], [6, 4],[7, 4]
+			]
+		},
+		"35": {
+			"cid": 35,
 			"name": "Blocked back tile",
 			"ico": ""
 		},
