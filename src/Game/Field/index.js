@@ -57,25 +57,33 @@ export default class Field extends PIXI.Container {
 		If fromCol and fromRow are passed then the tile will be going
 		from (fromCol, fromRow) to (col, row) by tweening */
 	createFrontTile(cid, col, row, fromCol, fromRow, onComplete, appearanceDelay) {
-		let tile = new Front(cid, col, row, this.levelObj);
-		this.frontTiles[col][row] = tile;
+        
+        let tile = new Front(cid, col, row, this.levelObj);
+        this.frontTiles[col][row] = tile;
 
 		tile.propLarger(Config.field.frontTileWidth, Config.field.frontTileHeight);
-		this.layerFront.addChild(tile);
+        this.layerFront.addChild(tile);
 
 		if (fromCol !== undefined && fromRow !== undefined) {
-			tile.position.set.apply(tile.position, this.getCoordsByPos(fromCol, fromRow));
-			let newCoords = this.getCoordsByPos(col, row);
-			this.tweenFrontTile(tile, newCoords[0], newCoords[1], onComplete, appearanceDelay);
+            tile.position.set.apply(tile.position, this.getCoordsByPos(fromCol, fromRow));
+            let newCoords = this.getCoordsByPos(col, row);
+            this.tweenFrontTile(tile, newCoords[0], newCoords[1], onComplete, appearanceDelay);
 		} else {
-			tile.position.set.apply(tile.position, this.getCoordsByPos(col, row));
-			if (onComplete) onComplete(tile);
+            tile.position.set.apply(tile.position, this.getCoordsByPos(col, row));
+            if (onComplete) onComplete(tile);
 		}
 		return tile;
 	}
 
 	/** Moves the tile to specified pos */
 	moveFrontTile(tile, col, row, onComplete) {
+        console.log(col, row);
+
+        // TODO: check next coordinate
+        // if(this.levelObj.hiddenBlock && this.levelObj.hiddenBlock.filter(item => item[0] == col && item[1] == row).length > 0){
+        //     return tile;
+        // }
+
 		this.frontTiles[tile.col][tile.row] = null;
 		this.frontTiles[col][row] = tile;
 		tile.col = col;

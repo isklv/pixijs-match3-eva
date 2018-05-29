@@ -16,7 +16,13 @@ export default class Resolver {
 		for (let i = 0; i < this._field.backTiles.length; i++) {
 			this._field.frontTiles[i] = [];
 			for (let j = 0; j < this._field.backTiles[i].length; j++) {
-				exeptions = [];
+                
+                if(this._field.levelObj.hiddenBlock && this._field.levelObj.hiddenBlock.filter(item => item[0] == i && item[1] == j).length){
+                    continue;
+                }
+
+                exeptions = [];
+
 				/* We're going to take cids of front tiles of all side (left, top, right, bottom) relative to current, and
 				   avoid them when we generate new CID for current front tile. Then we'll never make prepared matches. */
 				tmpTile = this.getFront(i, j - 1);
@@ -28,11 +34,14 @@ export default class Resolver {
 				tmpTile = this.getFront(i, j + 1);
 				if (tmpTile) exeptions.push(tmpTile.obj.cid);
 
-				cid = this.getRndCID(exeptions);
+                cid = this.getRndCID(exeptions);
+                
 				this._field.createFrontTile(cid, i, j);
 			}
 		}
-		this.checkPossibleMoves(true);
+        this.checkPossibleMoves(true);
+        
+        console.log(this)
 	}
 
 	/** Removes all matches and fills the field with new front tiles */
@@ -197,6 +206,9 @@ export default class Resolver {
 		//loop through all pieces
 		main: for (let i = 0; i < this._field.frontTiles.length; i++) {
 			for (let j = 0; j < this._field.frontTiles[i].length; j++) {
+                if(this._field.levelObj.hiddenBlock && this._field.levelObj.hiddenBlock.filter(item => item[0] == i && item[1] == j).length){
+                    continue;
+                }
 				match = this.getMatchFor(this._field.frontTiles[i][j].col, this._field.frontTiles[i][j].row, used);
 				//if we looked for enough tiles
 				if (match) {
