@@ -68,47 +68,48 @@ export default {
 		11: ["ico", "icoSelected"],
 		12: ["ico", "icoSelected"],
 		5: ["ico"],
-		7: ["ico"]
+		7: ["ico"],
+		8: ["ico"]
 	},
 
 	/** Which front tiles are available on the field */
-	"frontCIDs": [1, 2, 3, 4], //default list of pieces on the field
-	// "frontCIDs": [1, 2, 3, 4, 9, 10, 11, 12], //more pieces on the field
+	//"frontCIDs": [1, 2, 3, 4], //default list of pieces on the field
+	 "frontCIDs": [1, 2, 3, 4, 9, 10, 11], //more pieces on the field
 
 	/** Game content */
 	"content": {
 		"1": {
 			"cid": 1,
 			"name": "First front tile",
-			"ico": "piece01.png",
-			"icoSelected": "piece01_02.png",
+			"ico": "ps_1_1.svg",
+			"icoSelected": "ps_1_2.svg",
 			"color": "0x8d4747"
 		},
 		"2": {
 			"cid": 2,
 			"name": "Second front tile",
-			"ico": "piece02.png",
-			"icoSelected": "piece02_02.png",
+			"ico": "s_1_1.svg",
+			"icoSelected": "s_1_2.svg",
 			"color": "0xff3333"
 		},
 		"3": {
 			"cid": 3,
 			"name": "Third front tile",
-			"ico": "piece03.png",
-			"icoSelected": "piece03_02.png",
+			"ico": "s_2_1.svg",
+			"icoSelected": "s_2_2.svg",
 			"color": "0xfff1dd"
 		},
 		"4": {
 			"cid": 4,
 			"name": "Fourth front tile",
-			"ico": "piece04.png",
-			"icoSelected": "piece04_02.png",
+			"ico": "s_3_1.svg",
+			"icoSelected": "s_3_2.svg",
 			"color": "0xffcc00"
 		},
 		"5": {
 			"cid": 5,
 			"name": "First map",
-			"ico": "map01.jpg"
+			"ico": "bg-orange.svg"
 		},
 		"6": {
 			"cid": 6,
@@ -119,32 +120,32 @@ export default {
 		"7": {
 			"cid": 7,
 			"name": "First back tile",
-			"ico": "backTile01.png"
+			"ico": "bTileWhite.png"
 		},
 		"8": {
 			"cid": 8,
 			"name": "Second back tile",
-			"ico": "backTile02.png"
+			"ico": "bTileBlack.png"
 		},
 		"9": {
 			"cid": 9,
 			"name": "Fifth front tile",
-			"ico": "piece05.png",
-			"icoSelected": "piece05_02.png",
+			"ico": "s_6_1.svg",
+			"icoSelected": "s_6_2.svg",
 			"color": "0x00a0ff"
 		},
 		"10": {
 			"cid": 10,
 			"name": "Sixth front tile",
-			"ico": "piece06.png",
-			"icoSelected": "piece06_02.png",
+			"ico": "Group_3.svg",
+			"icoSelected": "Group_2.svg",
 			"color": "0x6a8d47"
 		},
 		"11": {
 			"cid": 11,
 			"name": "Seventh front tile",
-			"ico": "piece07.png",
-			"icoSelected": "piece07_02.png",
+			"ico": "s_4_1.svg",
+			"icoSelected": "s_4_2.svg",
 			"color": "0x9c52c1"
 		},
 		"12": {

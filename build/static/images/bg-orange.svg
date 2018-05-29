@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="720" height="723" viewBox="0 0 720 723">
+  <defs>
+    <rect id="vfx-bg_copy-a" width="720" height="723"/>
+    <radialGradient id="vfx-bg_copy-c" cx="1.279%" cy="0%" r="141.25%" fx="1.279%" fy="0%" gradientTransform="scale(1 .56119) rotate(62.921 .013 0)">
+      <stop offset="0%" stop-color="#FAC988"/>
+      <stop offset="100%" stop-color="#E75C5E"/>
+    </radialGradient>
+    <linearGradient id="vfx-bg_copy-d" x1="50%" x2="50%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#FAC988" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#E75C5E"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <mask id="vfx-bg_copy-b" fill="#fff">
+      <use xlink:href="#vfx-bg_copy-a"/>
+    </mask>
+    <use fill="#D8D8D8" xlink:href="#vfx-bg_copy-a"/>
+    <g mask="url(#vfx-bg_copy-b)">
+      <g transform="translate(0 -296)">
+        <rect width="720" height="1283" fill="url(#vfx-bg_copy-c)"/>
+        <rect width="720" height="769" y="513" fill="url(#vfx-bg_copy-d)"/>
+      </g>
+    </g>
+  </g>
+</svg>

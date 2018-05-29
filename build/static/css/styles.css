@@ -2,3 +2,15 @@
 	padding: 0;
 	margin: 0;
 }
+
+#root {
+	/* background: url(../images/waves-white.svg) no-repeat 50% 50%, url(../images/bg-orange.svg) no-repeat 50% 50%; */
+}
+
+.save-score {
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	background-color: rgba(104, 15, 15, 1);
+	width: 638px;
+} 

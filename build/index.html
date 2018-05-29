@@ -5,9 +5,38 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width,user-scalable=no,minimum-scale=1,maximum-scale=1,shrink-to-fit=no">
 		<link rel="stylesheet" type="text/css" href="static/css/styles.css">
+		<link rel="stylesheet" href="/node_modules/material-design-lite/material.min.css">
+		<script src="/node_modules/material-design-lite/material.min.js"></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	</head>
 	<body>
 		<div id="root"></div>
+		<button id="show-dialog" type="button" class="mdl-button">Show Dialog</button>
+		<dialog class="mdl-dialog save-score">
+			<h4 class="mdl-dialog__title">Allow data collection?</h4>
+			<div class="mdl-dialog__content">
+			  <p>
+				Allowing us to collect data will let us get you the information you want faster.
+			  </p>
+			</div>
+			<div class="mdl-dialog__actions">
+			  <button type="button" class="mdl-button">Agree</button>
+			  <button type="button" class="mdl-button close">Disagree</button>
+			</div>
+		  </dialog>
+		  <script>
+			var dialog = document.querySelector('dialog');
+			var showDialogButton = document.querySelector('#show-dialog');
+			// if (! dialog.showModal) {
+			//   dialogPolyfill.registerDialog(dialog);
+			// }
+			showDialogButton.addEventListener('click', function() {
+			  dialog.showModal();
+			});
+			dialog.querySelector('.close').addEventListener('click', function() {
+			  dialog.close();
+			});
+		  </script>
 		<script src="./static/js/app.js?1"></script>
 	</body>
 </html>
