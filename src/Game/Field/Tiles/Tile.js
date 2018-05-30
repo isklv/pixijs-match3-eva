@@ -13,7 +13,16 @@ export default class Tile extends PIXI.Container {
 		//check hidden block
 		if(this.levelObj.hiddenBlock && this.levelObj.hiddenBlock.filter(item => item[0] == col && item[1] == row).length){
             this._bg = new PIXI.Sprite(PIXI.Texture.EMPTY);
-		}else{
+		} 
+		// Вафельная разметка
+		else if(cid == 7) {
+			if(col % 2 == row % 2) {
+				this._bg = new PIXI.Sprite(PIXI.Texture.from(Config.content[7].ico));
+			} else {
+				this._bg = new PIXI.Sprite(PIXI.Texture.from(Config.content[8].ico));
+			}
+		}
+		else{
 			this._bg = new PIXI.Sprite(PIXI.Texture.from(this.obj.ico));
         }
 		

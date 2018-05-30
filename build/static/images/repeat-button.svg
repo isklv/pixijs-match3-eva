@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="156" height="156" viewBox="0 0 156 156">
+  <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
+    <circle cx="77" cy="77" r="77" stroke="#FFF" stroke-width="2"/>
+    <path stroke="#FFF" stroke-linecap="round" stroke-width="5" d="M77,113 C96.882251,113 113,96.882251 113,77 C113,57.117749 96.882251,41 77,41 C57.117749,41 41,57.117749 41,77"/>
+    <polygon fill="#FFF" points="60 100 60 124.817 78.414 111.821" transform="matrix(-1 0 0 1 138.414 0)"/>
+  </g>
+</svg>
