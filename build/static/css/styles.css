@@ -7,17 +7,6 @@
 	/* background: url(../images/waves-white.svg) no-repeat 50% 50%, url(../images/bg-orange.svg) no-repeat 50% 50%; */
 }
 
-/* .save-score {
-	left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    background-color: rgba(104, 15, 15, 0.9);
-    width: 638px;
-    box-sizing: border-box;
-    padding: 60px 60px;
-    text-align: center;
-}  */
-
 .mdl-dialog h4 {
 	font-size: 18px;
     color: rgba(255, 255, 255, 1);
@@ -53,11 +42,6 @@
 	color: rgba(255, 255, 255, 1);
 	text-align: left;
 	top: 17px;
-	/* line-height: 48px; */
-}
-
-.mdl-textfield__label:after {
-	/* background-color: rgb(250, 206, 154); */
 }
 
 .mdl-textfield__input {
