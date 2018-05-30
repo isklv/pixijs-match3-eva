@@ -109,7 +109,7 @@ export default {
 		"5": {
 			"cid": 5,
 			"name": "First map",
-			"ico": "bg-orange.svg"
+			"ico": "back.svg"
 		},
 		"6": {
 			"cid": 6,
