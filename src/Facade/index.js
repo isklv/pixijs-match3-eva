@@ -16,7 +16,7 @@ export default class Facade {
 	/** Is invoked when all resources are loaded */
 	onLoaded() {
 		this._preloader.removeFromParent(true);
-		let game = new Game(5, 34);
+		let game = new Game(5, 20);
 		App.stage.addChild(game);
 	}
 }

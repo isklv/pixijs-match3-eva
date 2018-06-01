@@ -84,6 +84,11 @@ export default class Resolver {
 		//making list of all tiles on the field
 		for (let tmp, i = 0; i < this._field.frontTiles.length; i++) {
 			for (let j = 0; j < this._field.frontTiles[i].length; j++) {
+
+                if(!this._field.frontTiles[i][j]){
+                    continue;
+                }
+
 				tmp = this._field.frontTiles[i][j];
 				tiles.push(tmp);
 				this._field.frontTiles[i][j].__resolverSaved = [tmp.x, tmp.y];
@@ -158,7 +163,12 @@ export default class Resolver {
 		//we're going to start with looping through rows (not cols as usually), because the pieces have to appear from the bottom
 		for (let j = 0; j < this._field.frontTiles[0].length; j++) {
 			for (let i = 0; i < this._field.frontTiles.length; i++) {
-				tile = this._field.frontTiles[i][j];
+                
+                if(this._field.levelObj.hiddenBlock && this._field.levelObj.hiddenBlock.filter(item => item[0] == i && item[1] == j).length){
+                    continue;
+                }
+                
+                tile = this._field.frontTiles[i][j];
 				if (tile) continue;
 				tile = takeUnder(i, j);
 				if (tile) this._field.moveFrontTile(tile, i, j, done);
@@ -206,9 +216,11 @@ export default class Resolver {
 		//loop through all pieces
 		main: for (let i = 0; i < this._field.frontTiles.length; i++) {
 			for (let j = 0; j < this._field.frontTiles[i].length; j++) {
-                if(this._field.levelObj.hiddenBlock && this._field.levelObj.hiddenBlock.filter(item => item[0] == i && item[1] == j).length){
+                
+                if(!this._field.frontTiles[i][j] || (this._field.levelObj.hiddenBlock && this._field.levelObj.hiddenBlock.filter(item => item[0] == i && item[1] == j).length)){
                     continue;
                 }
+                
 				match = this.getMatchFor(this._field.frontTiles[i][j].col, this._field.frontTiles[i][j].row, used);
 				//if we looked for enough tiles
 				if (match) {
