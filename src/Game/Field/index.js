@@ -7,6 +7,8 @@ import Resolver from "./Resolver";
 import Swapper from "./Swapper";
 import Tabler from "./Tabler";
 import UI from "./UI";
+import Logo from "./Logo";
+import Cup from "./Cup";
 import Back from "./Tiles/Back";
 import Front from "./Tiles/Front";
 
@@ -22,16 +24,26 @@ export default class Field extends PIXI.Container {
 		this.layerBack = new PIXI.Container(); //here we will store all our back tiles
 		this.layerFront = new PIXI.Container(); //here we will store all our front tiles
 		this.ui = new UI();
+		this.logo = new Logo();
+		this.cup = new Cup();
 
 		this.cont.addChild(this.layerBack);
 		this.cont.addChild(this.layerFront);
-		this.addChild(this.cont);
 		this.addChild(this.ui);
+		this.addChild(this.logo);
+		this.addChild(this.cup);
+		this.addChild(this.cont);
+		
 
 		this.fillBackTiles(); //initializing back tiles array
 		this.fillFrontTiles(); //initializing front tiles array
 
-		this.ui.position.set(this.getBounds().width * 0.5, this.getBounds().height + 5);
+		// Меняем положение строки с очками
+		this.ui.position.set(this.getBounds().width - 85,-20);
+
+		this.logo.position.set(this.getBounds().width * 0.5 - 76, this.getBounds().height + 5);
+		this.cup.position.set(this.getBounds().width * 0.5 - 88, -184);
+		// this.ui.position.set(this.getBounds().width * 0.5, this.getBounds().height + 5);
 
 		this.interactive = true;
 		this.on("pointerdown", this.onStartClick = this.onStartClick.bind(this));

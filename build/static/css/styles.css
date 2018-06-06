@@ -7,6 +7,24 @@
 	/* background: url(../images/waves-white.svg) no-repeat 50% 50%, url(../images/bg-orange.svg) no-repeat 50% 50%; */
 }
 
+.main-cup {
+	width: 176px;
+	height: 170px;
+	position: absolute;
+	top: 7px;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+.logo {
+	position: absolute;
+	bottom: 26px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	width: 152px;
+	height: 46px;
+}
+
 .mdl-dialog h4 {
 	font-size: 18px;
     color: rgba(255, 255, 255, 1);

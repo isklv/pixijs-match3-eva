@@ -4,8 +4,8 @@ import { TweenLite } from "gsap";
 export default class UI extends PIXI.Container {
 	constructor() {
 		super();
-		this.tfScore = new PIXI.Text("0", {
-			fontSize: 50,
+		this.tfScore = new PIXI.Text("0 очков", {
+			fontSize: 20,
 			fill: 0xffffff,
 			fontWeight: "bold",
 			dropShadow: true,
@@ -17,6 +17,6 @@ export default class UI extends PIXI.Container {
 	}
 
 	setScore(score) {
-		TweenLite.to(this.tfScore, 0.7, { text: score, onUpdate: () => this.tfScore.text = Math.round(this.tfScore.text) });
+		TweenLite.to(this.tfScore, 0.7, { text: score, onUpdate: () => this.tfScore.text = Math.round(this.tfScore.text) + " очков" });
 	}
 }
