@@ -41,7 +41,8 @@ export default class Game extends PIXI.Container {
 			if (kx < 1 || ky < 1) this._field.scale.set(Math.min(kx * 0.9, ky * 0.9));
 			else this._field.scale.set(1);
 			bounds = this._field.getBounds();
-			this._field.position.set((App.data.W - bounds.width) * 0.5, (App.data.H - bounds.height) * 0.5);
+			// Меняем положение таблицы
+			this._field.position.set((App.data.W - bounds.width) * 0.5, (App.data.H - bounds.height) * 0.7 + 150);
 		}
 	}
 

@@ -9,10 +9,10 @@ export default {
 
 	"field": {
 		"frontTileSpeed": 550, //px per sec
-		"frontTileWidth": 70,
-		"frontTileHeight": 70,
-		"backTileWidth": 80,
-		"backTileHeight": 80,
+		"frontTileWidth": 37,
+		"frontTileHeight": 37,
+		"backTileWidth": 42,
+		"backTileHeight": 42,
 
 		/* All patterns to look for matches on the field. All pieces will be going through these
 		   patterns and be using pattern items relative to themselves col and row

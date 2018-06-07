@@ -7,6 +7,25 @@
 	/* background: url(../images/waves-white.svg) no-repeat 50% 50%, url(../images/bg-orange.svg) no-repeat 50% 50%; */
 }
 
+
+/* .main-cup {
+	width: 176px;
+	height: 170px;
+	position: absolute;
+	top: 7px;
+	left: 50%;
+	transform: translate(-50%, 0);
+} */
+
+/* .logo {
+	position: absolute;
+	bottom: 26px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	width: 152px;
+	height: 46px;
+} */
+
 .mdl-dialog h4 {
 	font-size: 18px;
     color: rgba(255, 255, 255, 1);
@@ -48,7 +67,7 @@
 	border-bottom: 2px solid rgba(255, 255, 255, 0.7);
 }
 
-.mdl-button {
+.mdl-dialog .mdl-button {
 	width: 188px;
     height: 36px;
     box-sizing: border-box;
@@ -92,4 +111,154 @@
 
 .code-from-sms h4 {
 	margin-bottom: 70px;
+}
+
+
+/* Меню */
+
+.hamburger {
+	position: absolute;
+	right: 14px;
+	top: 15px;
+	width: 42px;
+	height: 32px;
+	/* background-color: pink; */
+}
+
+.open-menu {
+	height: 100%;
+	width: 100%;
+	/* background-color: #3EABB9; */
+	background: url(../images/menu.svg) no-repeat 0 0;
+	background-size: 100%
+}
+
+.menu {
+	position: fixed;
+	padding: 0;
+	margin: 0;
+	right: -100%;
+	top: 0;
+	z-index: 1;
+	box-sizing: border-box;
+	height: 100%;
+	width: 100%;
+	/* max-width: 500px; */
+	transition: all .5s ease-out;
+	background: url(../images/back.svg) no-repeat 50% 50%;
+}
+
+.active .menu {
+	right: 0;
+}
+
+.menu .close-menu {
+	position: absolute;
+	right: 20px;
+	top: 23px;
+	width: 32px;
+	height: 27px;
+	background: url(../images/leave-menu-arrow.svg) no-repeat 0 0;
+	background-size: cover;
+}
+
+.menu .logo {
+	width: 152px;
+	height: 46px;
+	position: absolute;
+	bottom: 31px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.menu h4 {
+	font-size: 26px;
+	font-weight: bold;
+	color: rgba(255, 255, 255, 1);
+	margin: 20px 0 0;
+	text-align: center;
+}
+
+.menu .container {
+	width: 188px;
+	margin: 0 auto;
+	padding-top: 107px;
+}
+
+/* .menu .wrap {
+	margin-top: 107px;
+} */
+
+.menu .mdl-switch {
+	margin-bottom: 46px;
+}
+
+.menu .mdl-switch__label {
+	font-size: 24px;
+	color: white;
+}
+
+.menu .mdl-switch.is-checked .mdl-switch__thumb {
+	background-color: white;
+}
+
+.menu .mdl-switch.is-checked .mdl-switch__track {
+	background-color: rgba(255,255,255, .5);
+}
+
+.menu .mdl-button {
+	width: 100%;
+	margin-bottom: 26px;
+}
+
+.menu .mdl-button--raised {
+	background-color: white;
+}
+
+
+/* Стартовая страница */
+
+.start-page {
+	visibility: hidden;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: greenyellow;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 85px;
+	/* transition: all .5s ease-out; */
+	background: url(../images/back.svg) no-repeat 50% 50%;
+}
+
+.start-page.visible {
+	visibility: visible;
+}
+
+.start-page .happy-cup {
+	width: 175px;
+	height: 207px;
+}
+
+.start-page .sweet-game {
+	margin-top: 9px;
+	width: 319px;
+	height: 120px;
+}
+
+.start-page .from {
+	font-size: 18px;
+	font-weight: bold;
+	color: rgba(255, 255, 255, 1);
+	text-align: center;
+	margin-top: 30px;
+}
+
+.start-page .logo {
+	width: 182px;
+	height: 57px;
+	margin-top: 14px;
 }

@@ -12,7 +12,43 @@
 	</head>
 	<body>
 		<div id="root"></div>
-		<button id="show-dialog" type="button" class="mdl-button">Show Dialog</button>
+
+		<!-- Меню -->
+		<div class="hamburger">
+			<div class="open-menu"></div>
+			<div class="menu">
+				<img src="static/images/halva-logo.svg" alt="Халва" class="logo">
+				<div class="close-menu"></div>
+				<h4>Меню</h4>
+				<div class="container">
+					<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
+						<input type="checkbox" id="switch-1" class="mdl-switch__input" checked>
+						<span class="mdl-switch__label">Звук</span>
+					</label>
+					<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-2">
+						<input type="checkbox" id="switch-2" class="mdl-switch__input" checked>
+						<span class="mdl-switch__label">Музыка</span>
+					</label>
+					<!-- <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
+						<input type="checkbox" id="switch-1" class="mdl-switch__input" checked>
+						<span class="mdl-switch__label">Подсказки</span>
+					</label>					   -->
+					<button class="mdl-button mdl-js-button mdl-button--raised">ЛИДЕРЫ</button>
+					<button class="mdl-button mdl-js-button mdl-button--raised">ОБ ИГРЕ</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Стартовая страница -->
+		<div class="start-page visible">
+			<img src="/static/images/happy-cup-with-one-arm.svg" alt="" class="happy-cup">
+			<img src="/static/images/sweet-game.png" alt="Сладкая игра" class="sweet-game">
+			<div class="from">от карты</div>
+			<img src="static/images/halva-logo.svg" alt="Халва" class="logo">
+		</div>
+		<!-- <img src="static/images/happy-cup.svg" alt="" class="main-cup"> -->
+		<!-- <img src="static/images/halva-logo.svg" alt="Халва" class="logo"> -->
+		<!-- <button id="show-dialog" type="button" class="mdl-button">Show Dialog</button> -->
 
 		<!-- Сохраните ваш результат -->
 		<dialog class="mdl-dialog save-score">
@@ -65,19 +101,6 @@
 				</button>
 				<p>Ещё раз</p>
 		</dialog>
-		  <script>
-			var dialog = document.querySelector('.save-score');
-			var showDialogButton = document.querySelector('#show-dialog');
-			// if (! dialog.showModal) {
-			//   dialogPolyfill.registerDialog(dialog);
-			// }
-			showDialogButton.addEventListener('click', function() {
-			  dialog.showModal();
-			});
-			dialog.querySelector('.close').addEventListener('click', function() {
-			  dialog.close();
-			});
-		  </script>
 		<script src="./static/js/app.js?1"></script>
 	</body>
 </html>
